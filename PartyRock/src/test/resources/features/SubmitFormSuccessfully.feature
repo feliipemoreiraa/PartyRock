@@ -1,6 +1,6 @@
 Feature: Submit Party Rock form Successfully
-  Scenario: Submit the form successfully
-    Given  Access URL form
-    And  Input "playerName", "dateValue" and "testingArea" Values
-    When  Click Submit Button
-    Then Successfully Tab Appears
+  Scenario: Submit form successfully
+    Given  Access Form
+    And  Input "playerName", "dateValue" and "testingArea" Value
+    When  Click submit button
+    Then Successfully tab appears

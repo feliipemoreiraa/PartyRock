@@ -46,6 +46,7 @@ public class SCN_002 {
     }
     @After
     public void returnHomePage(){
+
         webDriver.quit();
     }
 }
