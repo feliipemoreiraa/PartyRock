@@ -40,7 +40,12 @@ public class SubmitFormMissingSoccerPlayerField {
     public void clickSubmitButton() {
         pageObject.submitButton.click();
     }
-    @Then("Field of Soccer Player show required field Message")
+    @Then("Soccer Player field show required field Message")
     public void fieldOfSoccerPlayerShowRequiredFieldMessage() {
+        if(pageObject.requiredFieldText_SoccerPlayer.isDisplayed()){
+            System.out.println("The Required Field message appears on Soccer Player field.");
+        }else{
+            System.out.println("The Required Field message didn't appears on Soccer Player field.");
+        }
     }
 }
